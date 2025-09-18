@@ -215,7 +215,6 @@
         const message = userInput.value.trim();
         if (message === '') return;
 
-        chatHistory.push({ role: "user", content: message });
         appendMessage(message, 'user-message');
         userInput.value = '';
 
@@ -295,3 +294,4 @@
 
 </body>
 </html>
+
