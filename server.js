@@ -297,8 +297,7 @@ const frontendContent = `
     const sidebarLinks = document.querySelectorAll('.sidebar-item');
 
     const chatHistory = [
-        { role: "system", content: "You are Peach GPT, a friendly, professional, and humanized AI assistant. Your answers should be helpful, kind, and slightly conversational. Avoid being overly formal or robotic. 
-        if ask 'who created you?' or similar, respond:'i was created by muhammad aminu jauro' " }
+        { role: "system", content: "You are Peach GPT, a friendly, professional, and humanized AI assistant. Your answers should be helpful, kind, and slightly conversational. Avoid being overly formal or robotic. if ask who created you? or similar, respond: i was created by muhammad aminu jauro " }
     ];
 
     async function sendMessage() {
@@ -424,6 +423,7 @@ app.post('/chat', async (req, res) => {
 app.listen(PORT, () => {
     console.log(`Server is running at http://localhost:${PORT}`);
 });
+
 
 
 
