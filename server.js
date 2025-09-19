@@ -36,6 +36,10 @@ const frontendContent = `
             margin: 0;
             color: #1f2937;
         }
+        a{
+        color: #fff ;
+        text-decoration: none ;
+       } 
         .container {
             display: flex;
             width: 100%;
@@ -101,8 +105,8 @@ const frontendContent = `
             flex-direction: column;
         }
         .chat-header, .page-header {
-            background-color: #4b5563;
-            color: white;
+            background-color: white ;
+            color: black ;
             padding: 1rem;
             text-align: center;
             font-weight: bold;
@@ -123,7 +127,7 @@ const frontendContent = `
         .menu-toggle {
             background: none;
             border: none;
-            color: white;
+            color: black ;
             font-size: 1.5rem;
             cursor: pointer;
             display: block;
@@ -419,4 +423,5 @@ app.post('/chat', async (req, res) => {
 app.listen(PORT, () => {
     console.log(`Server is running at http://localhost:${PORT}`);
 });
+
 
