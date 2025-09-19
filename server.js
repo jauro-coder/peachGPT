@@ -73,6 +73,8 @@ const frontendContent = `
             border-radius: 0.5rem;
             font-weight: 500;
             transition: background-color 0.2s;
+            color:white:
+            text-decoration:none;
         }
         .sidebar-item:hover {
             background-color: #374151;
@@ -417,3 +419,4 @@ app.post('/chat', async (req, res) => {
 app.listen(PORT, () => {
     console.log(`Server is running at http://localhost:${PORT}`);
 });
+
