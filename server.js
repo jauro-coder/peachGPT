@@ -5,9 +5,8 @@ const path = require('path');
 const app = express();
 const PORT = 3000;
 
-// IMPORTANT: Insert your new, secret API key here.
-// This key is now secure because it will only run on your server.
-const OPENAI_API_KEY = "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";
+// IMPORTANT: Now we are securely getting the API key from Render's environment variables.
+const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
 
 // Initialize OpenAI client with the API key
 const openai = new OpenAI({ apiKey: OPENAI_API_KEY });
@@ -22,7 +21,8 @@ const frontendContent = `
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Secure Peach GPT</title>
+    <title>PeachGPT</title>
+    <meta name="description" content="your personal AI assistant "
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
